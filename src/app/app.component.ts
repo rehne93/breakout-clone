@@ -121,7 +121,7 @@ export class AppComponent implements OnInit {
     };
     this.game.add(this.ball);
 
-    //this.buildBruicks(this.game);
+    this.buildBruicks(this.game);
     this.buildSpaceShip(this.game);
 
     // Paddle collision with particle? Explode
@@ -165,7 +165,7 @@ export class AppComponent implements OnInit {
     const paddleArgs: ActorArgs = {
       x: 150,
       y: this.game.drawHeight,
-      width: this.GAME_DRAW_WIDTH,
+      width: 60,
       height: -40,
       color: Color.DarkGray,
       collisionType: CollisionType.Fixed,
@@ -302,7 +302,7 @@ export class AppComponent implements OnInit {
     const padding = 80;
     const xoffset = 110;
     const yoffset = 20;
-    const columns = 1;
+    const columns = 3;
     const velocity: Vector = new Vector(100, 0);
 
     const color = Color.Magenta;
